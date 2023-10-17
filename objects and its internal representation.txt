@@ -1,0 +1,49 @@
+Objects and Its Internal Representation In JavaScript
+=======================================================
+
+Objects:
+--------
+• An object is essentially a collection of properties.
+• Objects are different than primitive datatypes (i.e. number, string, Boolean, etc.).
+• Primitive data types contain one value but Objects can hold many values in form of Key: value pair.
+• These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+Object creation:
+-----------------
+
+Syntax:
+
+Primitive value . object name = new Object();
+
+Eg: var myCar = new Object();
+
+The syntax for adding a property:
+----------------------------------
+ 
+Syntax:
+
+Object Name.Object Property = propertyValue;
+
+Eg: myCar.make = 'Suzuki';
+       myCar.model = 'Altros';
+
+Creating JavaScript Object with Object Literal:
+-------------------------------------------------
+
+Eg:   let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+Create JavaScript Object with Constructor:
+--------------------------------------------
+
+Eg:
+function Vehicle(name, maker) 
+{
+  this.name = name;
+   this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name);    //Output: Fiesta
+console.log(car2.name);    //Output: Santa Fe
+
+
